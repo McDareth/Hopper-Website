@@ -64,7 +64,7 @@ p
 
 .Footer h1
 {
-    text-align: center;
+    text-align: center !important;
 }
 
 /* The Modal (background) */
