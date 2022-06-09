@@ -1,0 +1,136 @@
+body 
+{
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-image: url(Images/Hopper\ Backing.jpg); 
+    background-size: auto; 
+    background-position: center;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.menu
+{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu:hover
+{
+    background: rgb(42, 233, 217); 
+    box-shadow: 0 0 100px rgb(42, 233, 217); 
+}
+
+.gImg
+{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gImg:hover
+{
+    background: rgb(32, 241, 112); 
+    box-shadow: 0 0 100px rgb(32, 241, 112);
+}
+
+h1
+{
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+}
+
+p
+{
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: justify;
+    
+}
+
+.box
+{
+    background: rgba(184, 248, 243, 0.539);
+    padding: 5px 10px 25%;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.348);
+    text-align: center;
+}
+
+footer
+{
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+  }
+  
+  .modal-content
+  {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+
+  .close 
+  {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus 
+  {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }

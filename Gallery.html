@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="Images/BrowserIMG.png">
+    <title>Gallery - Hopper A Name For A Friend</title>
+  </head>
+  <body>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+      </div>
+
+    <br>
+    <table table border = "0" height = "90%" width = "50%" align = "center">
+        <tr height = "10%">
+            <td colspan = "5">
+                <center>
+                 <div>
+                     <a href = "Index.html"><img class = "menu" src ="Images/Menu/Hopper Twitter Banner.png" height = "450px" width = "1250px" ></a>
+                 </div>
+             </center>
+             </td>
+        </tr>
+        <tr height = "10%">
+           <td><a href = "Index.html"><img class = "menu" src ="Images/Menu/Home.png" height = "100px" width = "250px" ></a></td>
+           <td><a href = "Gallery.html"><img class = "menu" src ="Images/Menu/Gallery.png" height = "100px" width = "250px" ></a></td>
+           <td><a href = "Author.html"><img class = "menu" src ="Images/Menu/Author.png" height = "100px" width = "250px" ></a></td>
+           <td><a href = "Artist.html"><img class = "menu" src ="Images/Menu/Artist.png" height = "100px" width = "250px" ></a></td>
+           <td><a href = "Shop.html"><img class = "menu" src ="Images/Menu/Shop.png" height = "100px" width = "250px" ></a></td>
+        </tr>
+        <tr height = "80%">
+            <td colspan= "5" style = "padding-top: 50px">
+                <div class = "box" style = "padding-bottom: 2%;">
+                    <h1>Book Images</h1>
+                    <table>
+                        <tr>
+                            <td><img class = "gImg" id = "pg1" src ="Images/Gallery/Book/Hopper pg. 1.jpg" height = "250px" width = "250px" onclick = "openModal('pg1')"></td>
+                            <td><img class = "gImg" id = "pg10" src ="Images/Gallery/Book/Hopper pg. 10.jpg" height = "250px" width = "250px" onclick = "openModal('pg10')"></td>
+                            <td><img class = "gImg" id = "pg15" src ="Images/Gallery/Book/Hopper pg. 15.jpg" height = "250px" width = "250px" onclick = "openModal('pg15')"></td>
+                            <td><img class = "gImg" id = "pg18" src ="Images/Gallery/Book/Hopper pg. 18.jpg" height = "250px" width = "250px" onclick = "openModal('pg18')"></td>
+                            <td><img class = "gImg" id = "pg21" src ="Images/Gallery/Book/Hopper pg. 21.jpg" height = "250px" width = "250px" onclick = "openModal('pg21')"></td>
+                        </tr>
+                    </table> 
+                </div>
+                <br>
+                <br>
+                <div class = "box" style = "padding-bottom: 2%;">
+                    <h1>Promotional Images</h1>
+                    <table>
+                        <tr>
+                            <td><img class = "gImg" id = "0024" src ="Images/Gallery/Promotion/IMG_0024.JPG" height = "250px" width = "250px" onclick = "openModal('0024')"></td>
+                            <td><img class = "gImg" id = "0027" src ="Images/Gallery/Promotion/IMG_0027.JPG" height = "250px" width = "250px" onclick = "openModal('0027')"></td>
+                            <td><img class = "gImg" id = "0044" src ="Images/Gallery/Promotion/IMG_0044.JPG" height = "250px" width = "250px" onclick = "openModal('0044')"></td>
+                            <td><img class = "gImg" id = "0045" src ="Images/Gallery/Promotion/IMG_0045.JPG" height = "250px" width = "250px" onclick = "openModal('0045')"></td>
+                            <td><img class = "gImg" id = "0060" src ="Images/Gallery/Promotion/IMG_0060.JPG" height = "250px" width = "250px" onclick = "openModal('0060')"></td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+        
+    <br>
+
+    <script>
+        function openModal(imgC)
+        {
+        document.getElementById("myModal").style.display = "block";
+        document.getElementById("img01").src = document.getElementById(imgC).src;
+       
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() { 
+        document.getElementById("myModal").style.display = "none";
+        }
+    
+        }
+
+        
+    </script>
+        <footer>
+            <h1>Copyright &#169; 2021 - 2022 by A. B. Augustin</h1>
+        </footer>
+    </body>
+</html>
